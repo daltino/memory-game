@@ -1,0 +1,112 @@
+$main: #555;
+
+*,
+*:before,
+*:after {
+  box-sizing: border-box;
+}
+
+body {
+  #root {
+    color: $main;
+    margin: auto;
+    text-align: center;
+  }
+  display: flex;
+}
+
+.game {
+  margin: 0 auto;
+}
+
+.game-box {
+  margin: auto;
+  text-align: center;
+  width: 30rem;
+}
+
+.help {
+  color: #666;
+  margin: 10px;
+}
+
+.control-box {
+  text-align: center;
+  border: thin solid #ddd;
+}
+
+.number-box {
+  text-align: center;
+  padding: 10px;
+  border: thin solid #ddd;
+  max-width: 100%;
+}
+
+.number {
+  background-color: #eee;
+  border: thin solid #ddd;
+  width: 5rem;
+  height: 5rem;
+  margin: 10px;
+  font-size: 25px;
+  vertical-align: top;
+
+  &:hover {
+    background-color: #555;
+  }
+}
+
+.number:focus, .number:active {
+  outline: none;
+  border: thin solid #ddd;
+}
+
+.timer {
+	color: #666;
+  margin-top: 3px;
+  margin-left: 3px;
+}
+
+.game-done {
+  margin-bottom: 2rem;
+}
+
+.game-done .message {
+  font-size: 250%;
+  font-weight: bold;
+  margin: 2rem;
+}
+
+.card {
+  height: 7rem;
+  width: 7rem;
+  padding: 1rem;
+  border: 1px solid silver;
+  font-size: 4rem;
+  text-align: center;
+  border-radius: 0.3rem;
+  cursor: pointer;
+  display: inline-block;
+  margin-right: 1rem;
+  margin-top: 1rem;
+
+  &:hover {
+    background-color: #666;
+    color: white;
+  }
+}
+
+.button {
+  height: 2rem;
+  width: 50%;
+  margin-top: 1rem;
+}
+
+.turn-record {
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.history-box {
+  margin-top: 1rem;
+}
